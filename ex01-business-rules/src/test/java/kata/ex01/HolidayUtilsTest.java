@@ -17,5 +17,7 @@ public class HolidayUtilsTest {
         assertThat(HolidayUtils.isHoliday(LocalDate.of(2021, 1, 2))).isTrue();
         assertThat(HolidayUtils.isHoliday(LocalDate.of(2021, 1, 3))).isTrue();
         assertThat(HolidayUtils.isHoliday(LocalDate.of(2021, 1, 4))).isFalse();
+        assertThat(HolidayUtils.isHoliday(LocalDate.of(2021, 1, 5))).isFalse();
+        assertThat(HolidayUtils.isHoliday(LocalDate.of(2021, 1, 6))).isFalse();
     }
 }
